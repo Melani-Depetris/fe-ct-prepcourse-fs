@@ -1,0 +1,106 @@
+Arrays (LISTAS)
+ -Tipo de dato dentro de JavaScript
+ -Nos permiten guardar y gestionar información
+ -Objeto global dentro de JavaScript
+ -Asociados a una serie de métodos
+
+ Listas
+     -Distintas posiciones para guardar un dato
+     -Guardar y organizar la información
+
+     Elementos: Datos que hemos guardado
+     Indice: Posicion de guardado (comienza en cero el conteo)
+     *Siempre el elemento tendra un número mayor al Indice.
+
+ Herramientas del Array:
+
+ - Length: Nos permite saber cuantos elementos contiene un arreglo, cual es su extencion (traducción longitud).
+
+METODOS
+ Funciones nativas/preestablecidas en los lenguajes de programación
+
+ +Métodos de inserción:
+
+     1-PUSH: AGREGA uno o más elementos al final de un arreglo, y devuelve la nueva longitud del array.
+     2-POP: ELIMINA y devuelve el último elemento de un arreglo.
+     3-UNSHIFT: AGREGA uno o más elementos al inicio de un arreglo, y devuelve la nueva longitud del array.
+     4-SHIFT: ELIMINA y devuelve el primer elemento de un arreglo.
+
+ +Métodos con respuesta booleana:
+
+     1-INCLUDES: Determina si un arreglo contiene un elemento especifico. Devuelve true o false en cada caso.
+     2-EVERY: Determina si todos los elementos en un arreglo cumplen con una misma condición.
+
+ +Métodos split (SEPARAR) y join (UNIR)
+
+     Nos permiten transformar strings en arreglos y arreglos en strings
+     1-SPLIT: Convierte un string en un arreglo, donde cada elemento contendrá un sub-string, dependiendo del parámetro divisor que indiquemos.
+     2-JOIN: Convierte un arreglo en un string, uniendo todos los elementos de este en una misma cadena.
+
+ +Métodos de recorrido:
+
+     1-forEach: Nos permite recorrer un arreglo, realizando alguna acción para cada elemento.
+     2-map: También nos permite recorrer un arreglo y realizar una acción por cada elemento. La diferencia es que este método devuelve un nuevo arreglo los elementos modificados.
+
+ OTROS MÉTODOS
+
+ Existen más de 40 métodos que puedes utilizar para realizar operaciones complejas de una manera mucho más sencilla.
+ Existe una página web llamada Mozilla Developer. en la que podremos encontrar toda la documentación, información y ejemplos sobre JavaScript. En esta ocasión te compartimos todos los métodos de arreglos en JavaScript(opens in a new tab). Podrás encontrar el listado en la columna izquierda de la página.
+ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+BUCLES O CICLOS
+ En los Arrays: Aprenderemos distintos bucles, el Bucle For y el otro es el Bucle While.
+
+ BUCLE 
+ -Secuencia de instrucciones a la que se le asigna una condición.
+ -Se jecuta hasta que la condición asignada deje de cumplirse.
+
+ Bucles que js ofrece de forma nativa: FOR and WHILE.
+
+     FOR: Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle.
+
+     USO:
+     Como en cualquier otra declaracion de JS tendremos una palabra reservada que indicara que estamos trabajando con este tipo de bucle.
+
+     Sintaxis: for ([expresion-inicial]; [condicion]; [expresion-final])sentencia
+
+     "FOR (){};" 
+     () -- No sirven para recibir parametros, los usaremos para otra cosa. El parentesis va a estar compuesto por 3 datos separados por ';'. Cada dato tendra una función anidada especifica.
+
+     *Cuando trabajamos con un bucle "FOR" siempre declararemos una variable de iteración. Nos permitira tener un nodo para trabajar en cada iteración del bucle.
+     Podemos llamar esta variable con la letra i.
+
+     3 partes dentro del parentesis:
+     Exp(var i = 0;) LA PRIMERA ITERACION SIEMPRE SERA LA NÚMERO CERO POR LO QUE LA IGUALEMOS A ESTA.
+
+     Exp(;i < arr.length) PARA DEFINIR ESTE DATO, QUE QUEREMOS ITERAR?  SIEMPRE VAMOS A ITERRAR ARREGLOS, POR LO QUE TENEMOS QUE DEFINIR QUE ARREGLOS SERÁ. YA DECIDIDO, MIENTRAS SE CUMPLA QUE CONDICION QUIERO QUE ESTE BUCLE SE ITERE? ESTO NOS PERMITE PONER UNA SENTENCIA DE CIERRE A ESTE BUCLE.
+
+     Exp(; i++) INDICA QUE SUCEDERA CON LA VARIABLE DE ITERACIÓN AL FINAL DE CADA ITERACIÓN. i++ SE SUMARA 1 A LA VARIABLE i.
+
+     *El parentesis nos ayuda a recorrer el arreglo.
+
+     {} -- Nos ayudara a realizar la acción
+     Lo haremos usando el nombre del arreglo + []
+
+            // FOR
+            var arr = [1, 2, 3, 4, 5];
+            for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            }
+
+     WHILE: Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia.
+     Sintaxis: while (condicion)
+     sentencia.
+
+            // WHILE
+            var arr = [];
+            while (arr.length < 5) {
+            arr.push('Camilo');
+            }
+            console.log(arr);
+
+     Bucle infinito: Esto no es un nuevo tipo de bucle, sino algo que se puede producir en los que ya aprendimos. Un bucle infinito se produce cuando un bucle comienza a ejecutarse, pero jamás termina. Esto se debe a que nunca se llega a la condición de quiebre.
+
+     Esto consume muchos recursos de la computadora, por lo que hay que intentar evitarlos. 
+
